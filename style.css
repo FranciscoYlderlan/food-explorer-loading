@@ -1,0 +1,114 @@
+
+:root {
+  --duration: 1s;
+  --initial-positionX:-10px;
+}
+
+body {
+  background-color: #101010;
+}
+
+.svg-lettuce-strong {
+  animation: bounce-in-top var(--duration) ease 2.19s both alternate infinite;
+}
+.svg-lettuce-light {
+  animation: bounce-in-top var(--duration) ease 2.16s both alternate infinite;
+}
+
+.svg-shrimp-1 {
+  animation: bounce-in-top var(--duration) ease 2.15s both alternate infinite;
+}
+.svg-shrimp-2 {
+  animation: bounce-in-top var(--duration) ease 2.14s both alternate infinite;
+}
+.svg-shrimp-3 {
+  animation: bounce-in-top var(--duration) ease 2.12s both alternate infinite;
+}
+.svg-shrimp-4 {
+  animation: bounce-in-top var(--duration) ease 2.1s both alternate infinite;
+}
+
+.svg-fish{
+  animation: bounce-in-top var(--duration) ease 2.07s both alternate infinite;
+}
+
+.svg-broccoli-large {
+  animation: bounce-in-top var(--duration) ease 2.05s both alternate infinite;
+}
+
+.svg-broccoli-thin {
+  animation: bounce-in-top var(--duration) ease 2.02s both alternate infinite;
+}
+
+
+.svg-egg {
+  animation: bounce-in-top var(--duration) ease 2s both alternate infinite;
+}
+
+.svg-steak{
+  animation: bounce-in-top var(--duration) ease 1.93s both alternate infinite;
+}
+
+.svg-chicken-tight {
+  animation: bounce-in-top var(--duration) ease 1.9s both alternate infinite;
+}
+
+.svg-pan {
+  animation: pan 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s  infinite;
+  transform: rotateY(180deg)
+}
+
+
+@keyframes pan {
+  0% {
+    transform: rotate(0deg) translateX(100px);
+    transform-origin: top right;
+  }
+  10% {
+    transform: rotate(-2deg) translateX(100px);
+    transform-origin: top right;
+  }
+  50% {
+    transform: rotate(15deg) translateX(100px);
+  }
+  100% {
+    transform: rotate(0deg) translateX(100px);
+  }
+}
+
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-250px);
+
+    animation-timing-function: ease-in;
+  }
+
+  38% {
+    transform: translateY(0px); 
+    animation-timing-function: ease-out;
+  }
+  55% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-15px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0px); 
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-5px);    
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0px); 
+    animation-timing-function: ease-out;
+  }
+}
